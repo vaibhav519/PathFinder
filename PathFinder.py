@@ -16,7 +16,7 @@ text = HeadFont.render('Path Finding Visualizer', True, (255, 255, 255))
 text1 = ButtonsFont.render('Reset', True, (255, 255, 255))
 text2 = ButtonsFont.render('Visualize', True, (255, 255, 255))
 text3 = ButtonsFont.render('A-Star', True, (255, 255, 255))
-text4 = ButtonsFont.render('Dijsktra', True, (255, 255, 255))
+text4 = ButtonsFont.render('Dijkstra', True, (255, 255, 255))
 rect1 = pygame.Rect(1250, 45, 80, 25)
 rect2 = pygame.Rect(1350, 45, 120, 25)
 rect3 = pygame.Rect(30, 50, 80, 25)
@@ -149,7 +149,7 @@ def reconstruct_path(came_from, current, draw):
         draw()
 
 
-def Dijsktra(draw, grid, start, end):
+def Dijkstra(draw, grid, start, end):
     count = 0
     open_set = PriorityQueue()
     open_set.put((0, count, start))
@@ -348,7 +348,7 @@ def main(win, width):
                     for row in grid:
                         for spot in row:
                             spot.update_neighbors(grid)
-                    Dijsktra(lambda: draw(win, grid, ROWS, width), grid, start, end)
+                    Dijkstra(lambda: draw(win, grid, ROWS, width), grid, start, end)
                     flag_dijsktra = False
 
             if event.type == pygame.MOUSEBUTTONDOWN:
