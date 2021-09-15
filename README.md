@@ -2,5 +2,5 @@
 A* Search Algorithm :
 ![](Astar.png)
 
-Dijaktra's Algorithm:
+Dijsktra's Algorithm:
 ![](Dijsktra.png)
