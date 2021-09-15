@@ -1,2 +1,2 @@
 # PathFinder
-![](astar.png)
+![](Astar.png)
