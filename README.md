@@ -1,6 +1,8 @@
 # PathFinder
-A* Search Algorithm :
+**A Star Search Algorithm :-**
+
 ![](Astar.png)
 
-Dijsktra's Algorithm:
+**Dijsktra's Algorithm:**
+
 ![](Dijkstra.png)
